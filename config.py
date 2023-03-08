@@ -46,7 +46,7 @@ SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2"
 )  # for upstream repo
 WELCOME_IMAGE = (
-    [int(i.strip()) for i in os.environ.get("WELCOME_IMAGE").split(",")]
+    [int(i.strip()) for i in os.environ.get("https://graph.org/file/98eb72aa430f8fdd1b9b7.jpg").split(",")]
     if os.environ.get("WELCOME_IMAGE")
     else []
 ) # image when someone hit /start
