@@ -48,7 +48,7 @@ SOURCE_CODE = os.environ.get(
 WELCOME_IMAGE = (
     [int(i.strip()) for i in os.environ.get("CWELCOME_IMAGE").split(" ")]
     if os.environ.get("WELCOME_IMAGE")
-    else [] # image when someone hit /start
+    else [] ) # image when someone hit /start
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
