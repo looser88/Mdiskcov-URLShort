@@ -45,10 +45,9 @@ IS_PRIVATE = is_enabled(
 SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2"
 )  # for upstream repo
-WELCOME_IMAGE = (
-    [int(i.strip()) for i in os.environ.get("https://graph.org/file/98eb72aa430f8fdd1b9b7.jpg").split(",")]
-    if os.environ.get("WELCOME_IMAGE")
-    else []
+WELCOME_IMAGE = os.environ.get(
+    "WELCOME_IMAGE", "https://graph.org/file/98eb72aa430f8fdd1b9b7.jpg")
+    
 ) # image when someone hit /start
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
