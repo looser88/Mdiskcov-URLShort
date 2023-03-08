@@ -17,7 +17,7 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = int(os.environ.get("API_ID"))  # API ID from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH")  # API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("BOT_TOKEN")  # Bot token from @BotFather
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5609164130:AAEzdS3nyMel-b92p1VLKKylfmO7_P2JM94")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
     if os.environ.get("ADMINS")
